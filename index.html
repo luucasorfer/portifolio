@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas O. R. Fernandes | Currículo Acadêmico</title>
+    <meta
+      name="description"
+      content="Currículo acadêmico de Lucas Fernandes, com informações sobre formação, interesses e projetos."
+    />
+    <title>Currículo Acadêmico</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome (para ícones) -->
@@ -16,7 +20,7 @@
     <!-- Botão de alternância de tema no topo -->
     <button
       id="theme-toggle"
-      class="absolute top-6 right-8 z-50 text-[var(--text-200)] hover:text-[var(--primary-100)] text-1/2xl transition"
+      class="fixed top-6 right-8 z-50 py-3 px-4 bg-[var(--primary-100)] text-white rounded-full shadow-md hover:shadow-lg transition-transform transform hover:scale-110"
       aria-label="Alternar tema"
     >
       <i class="fa fa-moon-o"></i>
@@ -28,6 +32,7 @@
       <a
         href="#"
         class="text-[var(--primary-100)] text-3xl transition-all transform hover:scale-125"
+        aria-label="Início"
         ><i class="fa fa-home"></i
       ></a>
       <div class="flex gap-6 text-[var(--text-200)]">
@@ -37,12 +42,12 @@
           >Sobre</a
         >
         <a
-          href="#projects"
+          href="#awards"
           class="font-semibold hover:text-[var(--primary-100)] transition-all transform hover:scale-105"
-          >Projetos</a
+          >Prêmios e Títulos</a
         >
         <a
-          href="#contact"
+          href="#info"
           class="font-semibold hover:text-[var(--primary-100)] transition-all transform hover:scale-105"
           >Contato</a
         >
@@ -57,15 +62,17 @@
         class="flex flex-col items-center justify-center h-[30rem] text-center"
         style="z-index: 1"
       >
-        <h2 class="text-6xl">Olá, eu sou</h2>
+        <h2 class="h-[4rem] text-6xl">Olá, eu sou</h2>
         <h1
-          class="text-6xl sm:text-8xl font-extrabold text-[var(--primary-100)]"
+          class="flex items-center h-[8rem] text-6xl sm:text-8xl font-extrabold text-[var(--primary-100)]"
         >
           Lucas Fernandes
         </h1>
-        <h2 class="w-[20rem] mt-4 text-md font-light text-[var(--text-200)]">
-          É um prazer recebê-lo (a) por aqui, seja bem-vindo (a) ao meu
-          currículo acadêmico!
+        <h2 class="w-[22rem] mt-4 text-md font-light text-[var(--text-200)]">
+          É um prazer recebê-lo (a) por aqui, <br />seja bem-vindo (a) ao meu
+          <span class="font-bold text-[var(--primary-100)]"
+            >currículo acadêmico</span
+          >!
         </h2>
       </div>
 
@@ -163,7 +170,8 @@
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
+    -->
 
     <!-- Prêmios e Títulos -->
     <section id="awards" class="py-16 px-4 bg-[var(--bg-100)]">
@@ -173,7 +181,7 @@
         </h2>
         <ul class="text-[var(--text-200)] text-lg space-y-4">
           <li>
-            <span class="font-semibold">2025 –</span> Professor homenageado dos
+            <span class="font-semibold">2025</span> – Professor homenageado dos
             formandos do curso Técnico Integrado em Informática, Instituto
             Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais
             (IFSULDEMINAS).
@@ -204,7 +212,7 @@
           class="flex justify-center gap-8 pt-6 text-[var(--text-200)] text-2xl"
         >
           <a
-            href="http://"
+            href="http://instagram.com/luucasorfer"
             target="_blank"
             rel="noopener noreferrer"
             class="w-[9rem] h-[2rem] hover:transition-all transform hover:scale-105"
@@ -217,7 +225,7 @@
             aria-label="Instagram"
           ></a>
           <a
-            href="https://github.com/seuusuario"
+            href="https://github.com/luucasorfer"
             target="_blank"
             rel="noopener noreferrer"
             class="w-[9rem] h-[2rem] hover:transition-all transform hover:scale-105"
@@ -232,7 +240,7 @@
           >
           </a>
           <a
-            href="https://linkedin.com/in/seuusuario"
+            href="https://www.linkedin.com/in/lucas-o-r-fernandes/"
             target="_blank"
             rel="noopener noreferrer"
             class="w-[9rem] h-[2rem] hover:transition-all transform hover:scale-105"
@@ -251,6 +259,13 @@
     <!-- Footer -->
     <footer class="text-center py-4 text-[var(--text-200)]">
       <p>&copy; 2025 Lucas O. R. Fernandes. Todos os direitos reservados.</p>
+      <a
+        class="fixed bottom-6 right-8 z-50 bg-[var(--primary-100)] text-white py-3 px-4 rounded-full shadow-md hover:shadow-lg transition-transform transform hover:scale-110"
+        href="#"
+        aria-label="Voltar ao topo"
+      >
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </a>
     </footer>
     <script>
       const toggleBtn = document.getElementById("theme-toggle");

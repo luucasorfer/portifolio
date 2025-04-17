@@ -1,7 +1,9 @@
 /* Importar a fonte Roboto */
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";
 
-/* Variáveis de cores personalizadas */
+/* ========================= */
+/* Variáveis de cores        */
+/* ========================= */
 :root {
   --primary-100: #2e8b57;
   --primary-200: #61bc84;
@@ -14,26 +16,28 @@
   --bg-200: #dcdcdc;
   --bg-300: #b4b4b4;
 }
+
 .dark {
-  --primary-100: #2e8b57;
-  --primary-200: #61bc84;
-  --primary-300: #c6ffe6;
-  --accent-100: #8fbc8f;
-  --accent-200: #345e37;
   --text-100: #ffffff;
   --text-200: #e0e0e0;
   --bg-100: #1e1e1e;
   --bg-200: #2d2d2d;
   --bg-300: #454545;
-  --bg-400: #b4b4b4;
 }
-/* Fonte padrão Roboto */
+
+/* ========================= */
+/* Estilo global             */
+/* ========================= */
 body {
   font-family: "Roboto", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Classes utilitárias para usar com Tailwind */
+/* ========================= */
+/* Classes utilitárias       */
+/* ========================= */
+
+/* Background Colors */
 .bg-primary-100 {
   background-color: var(--primary-100);
 }
@@ -43,21 +47,12 @@ body {
 .bg-primary-300 {
   background-color: var(--primary-300);
 }
-
 .bg-accent-100 {
   background-color: var(--accent-100);
 }
 .bg-accent-200 {
   background-color: var(--accent-200);
 }
-
-.text-100 {
-  color: var(--text-100);
-}
-.text-200 {
-  color: var(--text-200);
-}
-
 .bg-100 {
   background-color: var(--bg-100);
 }
@@ -68,16 +63,17 @@ body {
   background-color: var(--bg-300);
 }
 
+/* Text Colors */
+.text-100 {
+  color: var(--text-100);
+}
+.text-200 {
+  color: var(--text-200);
+}
+
+/* Gradients */
 .from-accent-clear {
   --tw-gradient-from: var(--accent-100);
   --tw-gradient-to: rgb(255 255 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.badge-instagram {
-  width: 200px;
-  height: 50px;
-  background-image: url("https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
