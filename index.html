@@ -27,7 +27,7 @@
     </button>
     <!-- Navbar -->
     <nav
-      class="flex items-center justify-between p-4 rounded-full bg-[var(--bg-100)] max-w-5xl mx-auto mt-8 px-8"
+      class="fixed top-0 left-0 right-0 flex items-center justify-between p-4 rounded-full bg-[var(--bg-100)] max-w-5xl mx-auto mt-8 px-8 shadow-md z-50"
     >
       <a
         href="#"
@@ -56,10 +56,10 @@
 
     <!-- Hero Section -->
     <section
-      class="relative flex justify-center text-center px-4 max-w-7xl mx-auto"
+      class="relative flex justify-center items-center text-center px-4 max-w-7xl mx-auto"
     >
       <div
-        class="flex flex-col items-center justify-center h-[30rem] text-center"
+        class="flex flex-col items-center justify-center h-[30rem] text-center min-h-screen"
         style="z-index: 1"
       >
         <h2 class="h-[4rem] text-6xl">Olá, eu sou</h2>
@@ -77,22 +77,26 @@
       </div>
 
       <!-- Shapes -->
-      <div style="z-index: 0">
+      <div class="absolute inset-0" style="z-index: 0">
         <div
-          class="absolute top-[66%] left-1/4 transform -translate-x-1/2 -translate-y-1/2 rotate-45 w-32 h-32 rounded-full bg-gradient-to-bl from-[var(--primary-300)] to-[var(--primary-100)] opacity-25"
+          class="absolute top-[58%] left-1/4 transform -translate-x-1/2 -translate-y-1/2 rotate-45 w-32 h-32 rounded-full bg-gradient-to-bl from-[var(--primary-300)] to-[var(--primary-100)] opacity-25"
         ></div>
 
         <div
-          class="absolute top-1/4 right-1/3 transform -translate-x-1/2 -translate-y-1/2 rotate-45 w-16 h-16 rounded-lg bg-gradient-to-bl from-[var(--primary-300)] to-[var(--primary-100)] opacity-50"
+          class="absolute top-[37%] right-1/3 transform -translate-x-1/2 -translate-y-1/2 rotate-45 w-16 h-16 rounded-lg bg-gradient-to-bl from-[var(--primary-300)] to-[var(--primary-100)] opacity-50"
         ></div>
 
-        <div class="absolute left-24 top-16 inline-block w-16 overflow-hidden">
+        <div
+          class="absolute left-[6%] top-[22%] inline-block w-16 overflow-hidden"
+        >
           <div
             class="dark:from-dark-accent-clear h-11 w-11 origin-bottom-left rotate-45 transform bg-gradient-to-bl from-accent-clear"
           ></div>
         </div>
 
-        <div class="absolute top-80 right-24 inline-block w-16 overflow-hidden">
+        <div
+          class="absolute bottom-80 right-24 inline-block w-16 overflow-hidden"
+        >
           <div
             class="dark:from-dark-accent-clear h-5 w-5 origin-bottom-left rotate-45 transform bg-gradient-to-bl from-accent-clear"
           ></div>
