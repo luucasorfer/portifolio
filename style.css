@@ -31,6 +31,9 @@
 body {
   font-family: "Roboto", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ========================= */
@@ -76,4 +79,95 @@ body {
   --tw-gradient-from: var(--accent-100);
   --tw-gradient-to: rgb(255 255 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+/* ========================= */
+/* Responsividade            */
+/* ========================= */
+
+/* Ajustes para telas pequenas (mobile) */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 0.875rem;
+  }
+
+  .w-[22rem] {
+    width: 90%; /* Ajusta a largura para caber na tela */
+  }
+
+  .h-[30rem] {
+    height: auto; /* Ajusta a altura para evitar cortes */
+  }
+
+  .gap-8 {
+    gap: 1rem; /* Reduz o espaçamento entre elementos */
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .py-16 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .text-md {
+    font-size: 1rem;
+  }
+
+  .w-[22rem] {
+    width: 80%; /* Ajusta a largura para tablets */
+  }
+
+  .h-[30rem] {
+    height: auto; /* Ajusta a altura para evitar cortes */
+  }
+
+  .gap-8 {
+    gap: 1.5rem; /* Ajusta o espaçamento */
+  }
+}
+
+/* Ajustes para telas grandes (desktop) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-md {
+    font-size: 1.125rem;
+  }
+
+  .w-[22rem] {
+    width: 60%; /* Ajusta a largura para telas maiores */
+  }
+
+  .gap-8 {
+    gap: 2rem; /* Espaçamento maior para telas grandes */
+  }
 }
